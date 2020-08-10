@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Pegawai extends Model
+{
+    protected $guarded = [];
+
+    
+    public function setoran(){
+         return $this->hasMany('App\Setoran');
+    }
+}
